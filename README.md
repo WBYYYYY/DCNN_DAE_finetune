@@ -32,3 +32,5 @@ This folder contains 12 images of the validation results including the correspon
 
 
 The data sets used to train or fine tune the networks are too large to upload. Please contact me to send by other means if necessary.
+
+Before using the .py file, a enviroment with tensorflow-gpu==2.6.0 is necessary. Please check the data file location again and change the file extraction command in the code before running it.
