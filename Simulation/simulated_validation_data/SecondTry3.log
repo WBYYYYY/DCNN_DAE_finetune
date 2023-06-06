@@ -1,0 +1,396 @@
+ 
+ 
+                                       G R A S P 9
+                                       ===========
+ 
+  General multi-reflector analysis program
+ 
+ GRASP9 version 9.3.03
+ 
+ 
+ GRASP9 found  12 CPUs
+ 
+ Program started at 10:32:12 on 21 February 2022
+ 
+ 
+ 
+  *** Object name:  Reflector_1
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Reflector_1
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: Global_Coor_1
+  Surface: Surface00001
+  Rim: Refl_Rim_1
+ 
+ 
+  *** Object name:  Global_Coor_1
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Global_Coor_1
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Refl_Surface_1
+  *** Class name :  paraboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Refl_Surface_1
+  *** Class name :  paraboloid
+  *** Message    :  New values in object
+ 
+ 
+  Focal length     :    33.0000 m
+   and in SI units :    33.0000 meter
+ 
+ 
+  *** Object name:  Refl_Rim_1
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Refl_Rim_1
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    55.0000 m
+    in y-direction :    55.0000 m
+  and in SI units
+    in x-direction :    55.0000     meter
+    in y-direction :    55.0000     meter
+ 
+  The rim limits in radii are
+    minimum :    55.0000     meter
+    maximum :    55.0000     meter
+ 
+  The rim limits in x direction are
+    minimum :   -55.0000     meter
+    maximum :    55.0000     meter
+ 
+  The rim limits in y direction are
+    minimum :   -55.0000     meter
+    maximum :    55.0000     meter
+ 
+ 
+  *** Object name:  Feed_1
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Feed_1
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Feed_1
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : Frequency_1
+  Coor_sys : Coor_Sys_Feed_1
+ 
+ 
+  *** Object name:  Feed_1
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  Feed_1
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of gaussian feed
+ 
+ 
+  Taper angle :   79.6111 degrees
+ 
+  Taper compared to on-axis level :  -12.0000 dB
+ 
+  The imaginary displacement along the negative z-axis
+    is  0.165858 wavelengths
+ 
+ 
+  *** Object name:  Frequency_1
+  *** Class name :  frequency
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Frequency_1
+  *** Class name :  frequency
+  *** Message    :  New values in object
+ 
+  Frequency No.    1  :   0.300000E+00 GHz
+ 
+ 
+  *** Object name:  Coor_Sys_Feed_1
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Coor_Sys_Feed_1
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.330000E+02 m
+  Y_axis :     0.000000   -1.000000    0.000000
+  Base name : Global_Coor_1
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  Field_Cuts_1
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Field_Cuts_1
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  Frequency : Frequency_1
+  Coor_sys : Coor_Sys_Cut_1
+  Theta range : start  -2.60255    end   2.60255    points   161
+  Phi range : start   0.00000    end  90.00000    points     2
+  File name : sph_1.cut
+ 
+ 
+  *** Object name:  Coor_Sys_Cut_1
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Coor_Sys_Cut_1
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Base name : Global_Coor_1
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  PO_Calc_1
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  PO_Calc_1
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  File name : po_3
+  Frequency : Frequency_1
+  Scatterer : Reflector_1
+  Coordinate system : Global_Coor_1
+ 
+ 
+  *** Object name:  Surface00001
+  *** Class name :  irregular_xy_grid_triangulation
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Surface00001
+  *** Class name :  irregular_xy_grid_triangulation
+  *** Message    :  New values in object
+ 
+ 
+  File name : Surface00003.sfc
+ 
+ 
+  *** Object name:  Field1
+  *** Class name :  planar_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Field1
+  *** Class name :  planar_grid
+  *** Message    :  New values in object
+ 
+  Frequency : Frequency_1
+  Coor_sys : Global_Coor_1
+  X range : start -0.550000E+02    end  0.550000E+02    points   128
+  Unit of grid limits : m
+  Y range : start -0.550000E+02    end  0.550000E+02    points   128
+  Near_dist :  0.330000E+02 m
+  File name : SecondTry3.grd
+ 
+ ----- TASK No. 1 -----     Started at 10:32:12 on February 21, 2022
+ PO_Calc_1 get_currents (source:sequence(ref(Feed_1)),
+ auto_convergence_of_po:on, convergence_on_output_grid:sequence(ref(Field1)))
+ 
+ 
+  *** Object name:  PO_Calc_1
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : Feed_1
+  PO-auto-convergence selection : on
+  Convergence test on output grid : Field1
+ 
+ 
+  *** Object name:  PO_Calc_1
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 3660/8800
+ 
+ 
+  *** Object name:  Surface00001
+  *** Class name :  irregular_xy_grid_triangulation
+  *** Message    :  Initialisation
+ 
+ 
+  Read tabulated data from data file named : Surface00003.sfc
+ 
+    Headline of the tabulated surface:
+    Line 1:    1.0300000e+02
+ 
+    The file specified number of points are 16384
+ 
+    The tabulated surface is defined in 16384 points
+ 
+    The limit distances between the points in x and y are:
+      Minimum: 0.8661410000 m
+      at point index: 2 and 3
+      Maximum: 155.5634919 m
+      at point index: 1 and 16384
+ 
+    Characteristics of surface
+      minimum x value: -55.00000000 m
+      maximum x value: 55.00000000 m
+      minimum y value: -55.00000000 m
+      maximum y value: 55.00000000 m
+      minimum z value: 0.2925194800E-02 m
+      maximum z value: 45.83333300 m
+      peak to peak   : 45.83040781 m
+      average z value: 15.51835905 m
+      rms of  z value: 9.813793732 m
+ 
+  The triangular data are read
+ 
+  Triangulation of sampling points
+ 
+  The Triangulation parameters data are generated
+ 
+  Derivatives in triangle corners
+ 
+  The Triangulation parameters data are generated
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      20/10     10/10      -10.50    -10.50      4.22
+      40/10     20/10      -12.31    -12.31      4.35
+      80/10     40/10      -15.80    -15.80      4.03
+     160/10     80/10      -16.18    -16.18      0.40
+     320/10    160/10      -24.07    -24.07   -135.89  *
+     120/10    320/10      -24.07    -24.07    -33.83
+     140/10    320/10      -24.07    -24.07   -127.43  *
+     130/10    320/10      -24.07    -24.07    -97.19  *
+     125/10    320/10      -24.07    -24.07    -61.70
+     128/10    320/10      -24.07    -24.07    -82.20  *
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      10/20     10/10      -10.50    -10.50     -3.88
+      10/40     10/20      -10.50    -10.50     -4.85
+      10/80     10/40      -10.50    -10.50     -6.55
+     10/160     10/80      -10.50    -10.50     -9.42
+     10/320    10/160      -10.50    -10.50    -14.40
+     10/640    10/320      -10.50    -10.50    -32.33
+    10/1280    10/640      -10.50    -10.50   -158.84  *
+     10/480   10/1280      -10.50    -10.50   -152.35  *
+     10/400   10/1280      -10.50    -10.50   -144.65  *
+     10/360   10/1280      -10.50    -10.50    -96.80  *
+     10/340   10/1280      -10.50    -10.50    -46.72
+     10/350   10/1280      -10.50    -10.50    -68.60
+  PO1 =  128  PO2 =  360  Face =    1, Final PO-values from auto-convergence.
+ 
+  Edge 1:
+  Max. value: ptd = 8800
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+        ptd       ptd       [dBi]     [dBi]      [dB]
+         20        10      -68.05    -10.50    -57.09
+         40        20      -69.00    -10.50    -63.64
+         80        40      -72.82    -10.50    -69.40
+        160        80      -75.05    -10.50    -67.83
+        320       160      -75.05    -10.50    -69.43
+        640       320      -75.05    -10.50    -72.24
+       1280       640      -75.05    -10.50   -215.68  *
+        480      1280      -75.05    -10.50   -198.92  *
+        400      1280      -75.05    -10.50   -193.99  *
+        360      1280      -75.05    -10.50   -117.07  *
+        340      1280      -75.05    -10.50    -75.34
+        350      1280      -75.05    -10.50    -92.08  *
+  PTD =  350              Edge =    1, Final PTD-value from auto-convergence.
+ 
+ ----- TASK No. 2 -----     Started at 10:32:41 on February 21, 2022
+ Field1 get_field (source:ref(PO_Calc_1))
+ 
+ 
+  *** Object name:  Field1
+  *** Class name :  planar_grid
+  *** Message    :  Get_field message received
+ 
+  Source : PO_Calc_1
+ 
+  Name of currents file: po_3
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 1
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 300.000 MHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1       128       360         3
+ 
+    Edge No.     PTD1
+          1       350
+ 
+ 
+ 
+  *** Object name:  Field1
+  *** Class name :  planar_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 10:32:56 on February 21, 2022
+ Total time was 43.73 sec
+ 
+ GRASP9 SN: 00099 
+ Program stopped at 10:32:56 on 21 February 2022
+ 

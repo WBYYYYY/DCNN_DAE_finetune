@@ -1,0 +1,4 @@
+FILES READ ALL SecondTry1.tor
+COMMAND OBJECT PO_Calc_1 get_currents (source:sequence(ref(Feed_1)), auto_convergence_of_po:on, convergence_on_output_grid:sequence(ref(Field1)))
+COMMAND OBJECT Field1 get_field (source:ref(PO_Calc_1))
+QUIT

@@ -1,0 +1,19 @@
+ 
+ GRASP9 program entered, version 9.3.03
+ 
+ GRASP9 found  12 CPUs
+ 
+ Program started at 10:32:12 on 21 February 2022
+GRASP9>FILES READ ALL SecondTry2.tor
+GRASP9>COMMAND OBJECT PO_Calc_1 get_currents (source:sequence(ref(Feed_1)), auto_convergence_of_po:on, convergence_on_output_grid:sequence(ref(Field1)))
+ ----- TASK No. 1 -----     Started at 10:32:12 on February 21, 2022             
+  PO1 =  128  PO2 =  360  Face =    1, Final PO-values from auto-convergence.
+  PTD =  350              Edge =    1, Final PTD-value from auto-convergence.
+ Total task time: 26.37 sec               
+GRASP9>COMMAND OBJECT Field1 get_field (source:ref(PO_Calc_1))
+ ----- TASK No. 2 -----     Started at 10:32:39 on February 21, 2022             
+ Total task time: 15.07 sec               
+GRASP9>QUIT
+ ----- END OF TASKS -----     Completed at 10:32:54 on February 21, 2022         
+ Total time was 41.60 sec
+ Program stopped at 10:32:54 on 21 February 2022

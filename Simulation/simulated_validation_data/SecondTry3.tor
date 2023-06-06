@@ -1,0 +1,80 @@
+Reflector_1  reflector  
+(
+  coor_sys         : ref(Global_Coor_1),
+  surface          : ref(Surface00001),
+  rim              : ref(Refl_Rim_1)
+)
+ 
+Global_Coor_1  coor_sys  
+(
+)
+ 
+Refl_Surface_1  paraboloid  
+(
+  focal_length     :    33.00000000     m
+)
+ 
+Refl_Rim_1  elliptical_rim  
+(
+  half_axis        : struct(x:    55.00000000     m,y:    55.00000000     m)
+)
+ 
+Feed_1  gaussian_beam_pattern  
+(
+  frequency        : ref(Frequency_1),
+  coor_sys         : ref(Coor_Sys_Feed_1),
+  taper_angle      :    79.61114286    ,
+  taper            :   -12.00000000    
+)
+ 
+Frequency_1  frequency  
+(
+  frequency_list   : sequence(  0.3     GHz)
+)
+ 
+Coor_Sys_Feed_1  coor_sys  
+(
+  origin           : struct(x:    0.000000000     m,y:    0.000000000     m,z:    33.00000000     m),
+  y_axis           : struct(x:    0.000000000    ,y:   -1.000000000    ,z:    0.000000000    ),
+  base             : ref(Global_Coor_1)
+)
+ 
+Field_Cuts_1  spherical_cut  
+(
+  frequency        : ref(Frequency_1),
+  coor_sys         : ref(Coor_Sys_Cut_1),
+  theta_range      : struct(start:   -2.602551927    ,end:    2.602551927    ,np:   161),
+  phi_range        : struct(start:    0.000000000    ,end:    90.00000000    ,np:     2),
+  file_name        : sph_1.cut
+)
+ 
+Coor_Sys_Cut_1  coor_sys  
+(
+  base             : ref(Global_Coor_1)
+)
+ 
+PO_Calc_1  po_single_face_scatterer  
+(
+  frequency        : ref(Frequency_1),
+  scatterer        : ref(Reflector_1),
+  coor_sys         : ref(Global_Coor_1),
+  file_name        : po_3
+)
+ 
+Surface00001  irregular_xy_grid_triangulation  
+(
+  file_name        : Surface00003.sfc
+)
+ 
+Field1  planar_grid  
+(
+  frequency        : ref(Frequency_1),
+  coor_sys         : ref(Global_Coor_1),
+  near_dist        :    33.000000     m,
+  x_range          : struct(start:   -55.00000000    ,end:    55.00000000    ,np:   128,unit: m),
+  y_range          : struct(start:   -55.00000000    ,end:    55.00000000    ,np:   128),
+  file_name        : SecondTry3.grd
+)
+ 
+  //$$ Saved at 22:28:49 on 04.07.2021 by GRASP9 ver. 9.3.03 SN=00099 
+  
