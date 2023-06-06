@@ -8,7 +8,7 @@ from tensorflow.keras.callbacks import ReduceLROnPlateau
 from keras.models import load_model
 import time
 
-imgpath = r'D:\SMC\grasp_batch\grasp_batch\train_noise_40\train_input\NNinput00001.png'
+imgpath = r'D:\grasp_batch\train_input\NNinput00001.png'
 image = cv2.imread(imgpath,2)
 image = cv2.resize(image, (128,128), interpolation=cv2.INTER_CUBIC)
 x_data = np.array(image)
@@ -28,7 +28,7 @@ def myssimcost(y_true, y_pred):
         output=ssim2+10*aaa
         return output
 time_start = time.time()
-model = load_model(r'D:\SMC\U-net\noise\model\u_40noiseFA2defor.h5', custom_objects={'myssimcost': myssimcost})
+model = load_model(r'D:\SMC\U-net\model\DANetV2.h5', custom_objects={'myssimcost': myssimcost})
 preds = model.predict(img_test)
 
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
@@ -39,5 +39,3 @@ predd = array_to_img(img_pre*65535)
 predd.save('test101.png')
 time_end=time.time()
 print('time cost',time_end-time_start,'s')
-#img_pre = np.array(img_pre*65535).astype('uint16')
-#cv2.imwrite('test_44.png', img_pre, [int(cv2.IMWRITE_PNG_COMPRESSION), 0])
