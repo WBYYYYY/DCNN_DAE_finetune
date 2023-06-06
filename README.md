@@ -18,7 +18,7 @@
 
 3. Network_model folder
 
-This two .h5 files are the trained models saved after initial training and fine tuning, respectively.
+These two .h5 files are the trained models saved after initial training and fine tuning, respectively.
 
 4. Simulation
 
@@ -29,3 +29,6 @@ This two .h5 files are the trained models saved after initial training and fine 
 5. Validation folder
 
 This folder contains 12 images of the validation results including the corresponding NFIR inputs, deformation labels (the ground truth), the DANetV1 predicting results and the DANetV2 predicting results.
+
+
+The data sets used to train or fine tune the networks are too large to upload. Please contact me to send by other means if necessary.
